@@ -24,8 +24,7 @@ button {
 
 /* Header Section  */   
 .header {
-    margin: 30px 0 30px 70px;
-    width: 100%;
+    margin: 30px 100px 30px 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -34,9 +33,42 @@ button {
     text-decoration: none;
     color: #000;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 28px;
 }
 
+.header .right-content ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .right-content ul li {
+    padding: 10px 18px;
+    border-radius: 100%;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #000;
+    transition: all 0.3s ease 0s;
+}
+
+.header .right-content ul li:hover {
+    background-color: #D9D9D9;
+}
+
+.header .right-content ul li a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 20px;
+}
+
+.header .right-content ul li.header-login {
+    border-radius: 8px;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
 
 /* Login & Register Section  */
 .hero {
@@ -114,4 +146,161 @@ button {
     color: #000;
 }
 
+/* Home Video Container  */
+.home-video-container {
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
 
+.home-video-container video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Subjects Container  */
+.subjects-container {
+    margin: 0px 0 20px 80px;
+    display: inline-block;
+    text-align: left;
+}
+
+.subjects-container .content-row {
+    margin-top: 40px;
+}
+
+.subjects-container .subject-details {
+    display: flex;
+}
+
+.subjects-container .subject-details .icon {
+    margin-right: 20px;
+    width: 20px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.subjects-container .subject-details header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.subjects-container .row {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.subjects-container .row .content {
+    margin-right: 20px;
+    height: 320px;
+    width: 230px;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.subjects-container .row .content:hover {
+    border: 2px solid #000;
+}
+
+.subjects-container .actions {
+    position: absolute;
+    justify-content: space-between;
+}
+
+.subjects-container .row .left-action button {
+    position: absolute;
+    height: 240px;
+    width: 80px;
+    background-color: #000;
+    top: 10%;
+    left: -20px;
+}
+
+.subjects-container .row .left-action button i {
+    font-size: 36px;
+    color: #fff;
+}
+
+.subjects-container .row .right-action button {
+    position: absolute;
+    height: 240px;
+    width: 80px;
+    background-color: #000;
+    top: 10%;
+    right: -20px;
+}
+
+.subjects-container .row .right-action button i {
+    font-size: 36px;
+    color: #fff;
+}
+
+/* Footer Section  */
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    padding: 5%;
+    background-color: #000;
+}
+
+.footer .row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer .row .content-col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .row .content-col header { 
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 90px;
+}
+
+.footer .row .content-col ul {
+    list-style: none;
+}
+
+.footer .row .content-col ul li {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.footer .horizontal-line {
+    margin: 40px 0 20px 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.footer .details {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.footer .details .left-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .details .left-content header {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.footer .details .left-content p {
+    margin-top: 8px;
+}
+
+.footer .details .right-content i{ 
+    font-size: 32px;
+    cursor: pointer;
+}
