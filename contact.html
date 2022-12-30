@@ -7,6 +7,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
+    <script src="custom.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header Section  -->
@@ -21,7 +22,50 @@
                 <li><a href="categories.html"><i class="fa-solid fa-border-all"></i></a></li>
                 <li><a href="faqs.html"><i class="fa-solid fa-circle-question"></i></a></li>
                 <li class="header-login"><a href="login.html">LOG IN</a></li>
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <div class="toggle-btn" onclick="show()">
+                    <li class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+                </div>
+                <!-- Side Bar Section  -->
+                <section id="sidebar">
+                    <div class="toggle-btn" onclick="show()">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </div>
+                    <div class="search-container">
+                        <form>
+                            <input type="search" name="search">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="search-filter">
+                        <div class="content-row">
+                            <header>Author</header>
+                            <div class="content-details">
+                                <div class="content">Author 1</div>
+                                <div class="content">Author 2</div>
+                                <div class="content">Author 3</div>
+                                <div class="content">Author 4</div>
+                                <div class="content">Author 5</div>
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <header>Publisher</header>
+                            <div class="content-details">
+                                <div class="content" style="width: 110px;">Publisher 1</div>
+                                <div class="content" style="width: 110px;">Publisher 2</div>
+                                <div class="content" style="width: 110px;">Publisher 3</div>
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <header>Year</header>
+                            <div class="content-details">
+                                <div class="content">2022</div>
+                                <div class="content">2018</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </ul>
         </div>
     </section>
