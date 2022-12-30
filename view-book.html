@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
+    <script src="custom.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section  -->
+    <section class="header">
+        <div class="left-content">
+            <a href="index.html">Title/Logo</a>
+        </div>
+        <div class="right-content">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i></a></li>
+                <li><a href="categories.html"><i class="fa-solid fa-border-all"></i></a></li>
+                <li><a href="faqs.html"><i class="fa-solid fa-circle-question"></i></a></li>
+                <li class="header-login"><a href="login.html">LOG IN</a></li>
+                <div class="toggle-btn" onclick="show()">
+                    <li class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+                </div>
+                <!-- Side Bar Section  -->
+                <section id="sidebar">
+                    <div class="toggle-btn" onclick="show()">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </div>
+                    <div class="search-container">
+                        <form>
+                            <input type="search" name="search">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="search-filter">
+                        <div class="content-row">
+                            <header>Author</header>
+                            <div class="content-details">
+                                <div class="content">Author 1</div>
+                                <div class="content">Author 2</div>
+                                <div class="content">Author 3</div>
+                                <div class="content">Author 4</div>
+                                <div class="content">Author 5</div>
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <header>Publisher</header>
+                            <div class="content-details">
+                                <div class="content" style="width: 110px;">Publisher 1</div>
+                                <div class="content" style="width: 110px;">Publisher 2</div>
+                                <div class="content" style="width: 110px;">Publisher 3</div>
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <header>Year</header>
+                            <div class="content-details">
+                                <div class="content">2022</div>
+                                <div class="content">2018</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ul>
+        </div>
+    </section>
+
+    <div class="horizontal-line"></div>
+
+    <!-- Book View Section  -->
+    <section class="book-view">
+        <div class="back">
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="index.html">Go Back</a>
+        </div>
+        <div class="book-content">
+            <div class="book-img"></div>
+            <div class="book-details">
+                <header>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam qui ullam reiciendis nam ipsum <br>
+                     error commodi impedit fugiat nihil sequi cupiditate possimus aliquam et minima maxime nulla, <br>
+                      odit neque soluta eos delectus magni, quidem dolor dolorum dignissimos.
+                </p>
+                <div class="actions">
+                    <button>Borrow</button>
+                    <button>Preview</button>
+                </div>
+                <div class="row">
+                    <div class="content-details">
+                        <header>Author</header>
+                        <p>Author placeholder</p>
+                    </div>
+                    <div class="content-details">
+                        <header>Year</header>
+                        <p>Year placeholder</p>
+                    </div>
+                    <div class="content-details">
+                        <header>Publisher</header>
+                        <p>Publisher placeholder</p>
+                    </div>
+                    <div class="content-details">
+                        <header>Language</header>
+                        <p>Language placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Comments Section  -->
+    <section class="book-comments">
+        <div class="leave-comment">
+            <form>
+                <header>Leave a Comment</header>
+                <textarea name="comment" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="comment-row">
+                <div class="user-details">
+                    <header>username</header>
+                    <h5>date-commented</h5>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae, debitis, assumenda mollitia pariatur enim animi quis error fuga itaque nulla, reiciendis omnis labore quod consequuntur voluptatibus facilis sequi aliquam. Ea molestias ad hic delectus, non nam veniam rerum ratione nobis quia, magnam necessitatibus laboriosam nesciunt distinctio eum officiis vel!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <section class="footer">
+        <div class="row">
+            <div class="content-col">
+                <header>About Library</header>
+                <ul>
+                    <li>Link name 1</li>
+                    <li>Link name 2</li>
+                    <li>Link name 3</li>
+                    <li>Link name 4</li>
+                </ul>
+            </div>
+            <div class="content-col">
+                <header>Link name 1</header>
+                <ul>
+                    <li>Page name 1</li>
+                    <li>Page name 2</li>
+                    <li>Page name 3</li>    
+                </ul>
+            </div>
+            <div class="content-col">
+                <header>Contact</header>
+                <ul>
+                    <li>Address</li>
+                    <li>Email</li>
+                    <li>Phone Number</li>
+                </ul>
+            </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="details">
+            <div class="left-content">
+                <header>Title/Logo</header>
+                <p><i class="fa-regular fa-copyright"></i> Title 2022 | All Rights Reserved | Version</p>
+            </div>
+            <div class="right-content">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
