@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
 </head>
@@ -28,70 +28,69 @@
 
     <div class="horizontal-line"></div>
 
-    <!-- Category Intro Section  -->
-    <section class="category-intro">
-        <header>Lorem ipsum dolor sit amet</header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br>
-             scelerisque, justo at tristique suscipit, elit.</p>
+    <!-- Contact Content Section  -->
+    <section class="home-video-container">
+        <video autoplay loop muted plays-inline>
+            <source src="/assets/videos/intro.mp4">
+        </video>
     </section>
 
-    <!-- Category Cards Section  -->
-    <section class="category-cards">
+    <!-- Contact Banner Section  -->
+    <section class="contact-banner">
         <div class="row">
-            <div class="content-col">
-                <header>Subject <br> Area <br> One</header>
-                <div class="actions">
-                    <button>Select</button>
+            <div class="contact-col mobile">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <div class="details">
+                    <header>Give us a call</header>
+                    <p>+63 1234 567 890</p>
                 </div>
             </div>
-            <div class="content-col">
-                <header>Subject <br> Area <br> One</header>
-                <div class="actions">
-                    <button>Select</button>
+            <div class="contact-col email">
+                <i class="fa-regular fa-envelope"></i>
+                <div class="details">
+                    <header>Send us a Email</header>
+                    <p>test@gmail.com</p>
                 </div>
             </div>
-            <div class="content-col">
-                <header>Subject <br> Area <br> One</header>
-                <div class="actions">
-                    <button>Select</button>
-                </div>
-            </div>
-            <div class="content-col">
-                <header>Subject <br> Area <br> One</header>
-                <div class="actions">
-                    <button>Select</button>
+            <div class="contact-col phone">
+                <i class="fa-solid fa-location-arrow"></i>
+                <div class="details">
+                    <header>You can find us at</header>
+                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="content-col">
-                <header>Subject <br> Area <br> One</header>
-                <div class="actions">
-                    <button>Select</button>
+    </section>
+
+    <!-- Contact Form Section  -->
+    <div class="contact-form">
+        <div class="wrapper">
+            <header>Send us a message</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Etiam tempus turpis a est porta convallis at at nisl.</p>
+            <form>
+                <div class="user-details">
+                    <div class="field input">
+                        <label for="name">Username</label>
+                        <input id="name" type="text" class="form-control"
+                            name="name" required requiredautocomplete="name">
+                    </div>
+                    <div class="field input">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="text" class="form-control"
+                            name="email" required requiredautocomplete="email">
+                    </div>
                 </div>
-            </div>
-            <div class="content-col">
-                <header>Subject <br> Area <br> One</header>
-                <div class="actions">
-                    <button>Select</button>
+                <div class="input message">
+                    <label for="message">Message</label>
+                    <textarea name="message" required></textarea>
                 </div>
-            </div>
-            <div class="content-col">
-                <header>Subject <br> Area <br> One</header>
-                <div class="actions">
-                    <button>Select</button>
+                <div class="action">
+                    <button type="submit">Send</button>
                 </div>
-            </div>
-            <div class="content-col">
-                <header>Subject <br> Area <br> One</header>
-                <div class="actions">
-                    <button>Select</button>
-                </div>
-            </div>
+            </form>
         </div>
 
-
-    </section>
+    </div>
 
     <!-- Footer Section  -->
     <section class="footer">

@@ -42,7 +42,7 @@ button {
 }
 
 .header .right-content ul li {
-    padding: 10px 18px;
+    padding: 10px 5px;
     border-radius: 100%;
     margin-left: 20px;
     font-size: 24px;
@@ -217,6 +217,11 @@ button {
     background-color: #000;
     top: 10%;
     left: -20px;
+    transition: all 0.3s ease 0s;
+}
+
+.subjects-container .row .left-action button:hover {
+    background-color: #D9D9D9;
 }
 
 .subjects-container .row .left-action button i {
@@ -231,6 +236,11 @@ button {
     background-color: #000;
     top: 10%;
     right: -20px;
+    transition: all 0.3s ease 0s;
+}
+
+.subjects-container .row .right-action button:hover {
+    background-color: #D9D9D9;
 }
 
 .subjects-container .row .right-action button i {
@@ -303,4 +313,229 @@ button {
 .footer .details .right-content i{ 
     font-size: 32px;
     cursor: pointer;
+}
+
+/* Contact Content Section  */
+.contact-content { 
+    height: 500px;
+    border-bottom: 2px solid #000;
+}
+
+/* Contact Banner Section  */
+.contact-banner {
+    height: 180px;
+    border-bottom: 2px solid #000;
+}
+
+.contact-banner .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-banner .row .contact-col {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-banner .row .contact-col i {
+    font-size: 82px;
+    margin-right: 30px;
+}
+
+
+.contact-banner .row .contact-col.mobile {
+    flex: 1 1 auto;
+    border-right: 2px solid #000;
+}
+
+.contact-banner .row .contact-col.email {
+    flex: 2 2 auto;
+    border-right: 2px solid #000;
+}
+
+.contact-banner .row .contact-col.phone {
+    flex: 2 2 auto;
+}
+
+.contact-banner .row .contact-col .details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-banner .row .contact-col .details header {
+    font-size: 30px;
+}
+
+.contact-banner .row .contact-col .details p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* Contact Form Section  */
+.contact-form {
+    width: 100%;
+}
+
+.contact-form .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 50px 80px;
+}
+
+.contact-form .wrapper header {
+    font-size: 32px;
+}
+
+.contact-form .wrapper p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.contact-form .wrapper form {
+    margin-top: 30px;
+}
+
+.contact-form .wrapper form .user-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form .wrapper form .user-details .field {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contact-form .wrapper form .user-details .field label {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.contact-form .wrapper form .user-details .input {
+    width: 100%;
+}
+
+.contact-form .wrapper form .user-details .input:first-child {
+    margin-right: 30px;
+}
+
+.contact-form .wrapper form .user-details .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 30px 20px 30px 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.contact-form .wrapper form .input.message {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;   
+}
+
+.contact-form .wrapper form .input.message label {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.contact-form .wrapper form .input.message textarea {
+    padding: 10px;
+    height: 300px;
+    resize: none;
+}
+
+.contact-form .wrapper form .action {
+    display: flex;
+    justify-content: right;
+    margin: 30px auto;
+}
+
+.contact-form .wrapper form .action button {
+    padding: 10px 80px;
+    background-color: #000;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-form .wrapper form .action button:hover {
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+/* Category Intro Section  */
+.category-intro {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+.category-intro header {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.category-intro p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* Category Cards Section  */
+.category-cards {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.category-cards .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.category-cards .row .content-col {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 30px 40px;
+    height: 430px;
+    width: 320px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.category-cards .row .content-col header {
+    font-size: 32px;
+}
+
+.category-cards .row .content-col .actions {
+    display: flex;
+    margin-top: 160px;
+}
+
+.category-cards .row .content-col .actions button {
+    padding: 10px 30px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+}
+
+.category-cards .row .content-col .actions button:hover {
+    background-color: #D9D9D9;
 }
