@@ -10,7 +10,8 @@
 body {
     min-height: 100vh;
     position: relative;
-    background-color: fff;
+    background-color: #fff;
+    overflow: hidden;
 }
 
 /* Global Classes  */
@@ -1079,4 +1080,258 @@ svg {
 .book-comments .row .comment-row p {
     font-size: 18px;
     margin-bottom: 20px;
+}
+
+/* Admin Sidbar Section  */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    background: #fff;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+    border: 2px solid #000;
+}
+
+.sidebar.active {
+    width: 240px;
+} 
+
+.sidebar .logo-content {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .logo-content .logo {
+    color: #000;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: all 0.5s ease;
+}
+
+.sidebar.active .logo-content .logo {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.sidebar .logo-content .logo i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.sidebar .logo-content .logo .logo-name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #000;
+    left: 50%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+.sidebar .nav-list {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    line-height: 50px;
+    margin: 10px 0px;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 122px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background-color: #fff;
+    color: #000;
+    line-height: 35px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    opacity: 0;
+    transition: 0s;
+    pointer-events: none;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+    transition: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
+}
+
+.sidebar ul li a {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.sidebar ul li a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.sidebar ul li i {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sidebar .links-name {
+    font-size: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .links-name {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar ul li input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: #1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sidebar ul li .fa-magnifying-glass {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 14px;
+    transform: all 0.5s ease;
+}
+
+.sidebar ul li .fa-magnifying-glass:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.sidebar .profile-content {
+    position: absolute;
+    color: #000;
+    bottom: 0;
+    left: 0;
+    background-color: #AAAAAA;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-top: 2px solid #000;
+}
+
+.sidebar .profile-content .profile {
+    transform: all 0.5s ease;
+}
+
+.sidebar.active .profile-content .profile {
+    background-color: none;
+}
+
+.sidebar .profile-content header {
+    margin-right: 60px;
+}
+
+.sidebar .profile-content #log-out {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: #000;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.sidebar .profile-content #log-out:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.sidebar.active .profile-content #log-out {
+    left: 82%;
+    bottom: 14px;
+}
+
+.sidebar .profile-content .profile-details {
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.sidebar.active .profile-content .profile-details {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.home-content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+}
+
+.home-content .text {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    margin: 12px;
+}
+
+.sidebar.active ~ .home-content {
+    width: calc(100% - 240px);
+    left: 240px;
 }

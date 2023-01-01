@@ -7,52 +7,87 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
-    <script src="custom.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <section class="admin-sidebar">
+    <!-- Admin Sidebar Section  -->
+    <section class="sidebar">
         <div class="logo-content">
             <div class="logo">
                 <i class="fa-solid fa-book-open-reader"></i>
                 <div class="logo-name">Title/Logo</div>
             </div>
-            <i class="fa-solid fa-bars"></i>
-            <ul class="nav-list">
-                <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search...">
-                    <!-- <span class="tooltip">Dashboard</span> -->
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-gauge-high"></i>
-                    </a>
-                    <span class="links name">Dashboard</span>
-                    <!-- <span class="tooltip">Dashboard</span> -->
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-book"></i></a>
-                    <span class="links name">Books</span>
-                    <!-- <span class="tooltip">Books</span> -->
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-address-book"></i></a>
-                    <span class="links name">Book Orders</span>
-                    <!-- <span class="tooltip">Book Orders</span> -->
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-border-all"></i></a>
-                    <span class="links name">Subject Area</span>
-                    <!-- <span class="tooltip">Subject Area</span> -->
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-users"></i></a>
-                    <span class="links name">Members</span>
-                    <!-- <span class="tooltip">Members</span> -->
-                </li>
-            </ul>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <!-- <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li> -->
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span class="links-name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="links-name">Books</span>
+                </a>
+                <span class="tooltip">Books</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span class="links-name">Book Orders</span>
+                </a>
+                <span class="tooltip">Book Orders</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span class="links-name">Subject Area</span>
+                </a>
+
+                <span class="tooltip">Subject Area</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="links-name">Members</span>
+                </a>
+                <span class="tooltip">Members</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <header>Logged in as: <br> Admin</header>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket" id="log-out"></i>
+            </div>
         </div>
     </section>
+
+    <section class="home-content">
+        <div class="text">Home Content</div>
+    </section>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".fa-magnifying-glass");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }
+
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }        
+    </script>
 </body>
 </html>
