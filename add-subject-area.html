@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subject Areas</title>
+    <title>Add Book</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -76,11 +76,47 @@
     <section class="view-container">
         <div class="wrapper">
             <div class="header-details">
-                <header>View Subject Areas</header>
-                <button><a href="add-subject-area.html"> Add Subject Area </a></button>
+                <header>Add Subject Area</header>
+                <button><a href="view-books.html"> Go Back </a></button>
             </div>
             <div class="content">
-                
+                <form>
+                    <div class="field input" style="margin-top: -10px;">
+                        <label for="booktitle">Book Title</label>
+                        <input id="booktitle" type="text" class="form-control"
+                            name="booktitle" required requiredautocomplete="booktitle">
+                    </div>
+                    <div class="input description">
+                        <label for="description">Description</label>
+                        <textarea name="description" required style="height: 200px;"></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field img">
+                            <label> Image </label>
+                            <input type="file" name="image" class="custom-file-upload">
+                        </div>
+                    </div>
+                    <div class="field input">
+                        <label for="status">Status</label>
+                        <input id="status" type="text" class="form-control"
+                            name="status" required requiredautocomplete="status">
+                    </div>
+                    <div class="row">
+                        <div class="checkbox-container">
+                            <div class="checkbox">
+                                <input type="checkbox" name="navbar_status">
+                                <label> Navbar Status </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="status">
+                                <label> Status </label>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button type="submit"> Add Category </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
