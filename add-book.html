@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Admin Sidebar Section  -->
+    <section class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <div class="logo-name">Title/Logo</div>
+            </div>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <!-- <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li> -->
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span class="links-name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="view-books.html">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="links-name">Books</span>
+                </a>
+                <span class="tooltip">Books</span>
+            </li>
+            <li>
+                <a href="view-book-orders.html">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span class="links-name">Book Orders</span>
+                </a>
+                <span class="tooltip">Book Orders</span>
+            </li>
+            <li>
+                <a href="view-subject-areas.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span class="links-name">Subject Area</span>
+                </a>
+
+                <span class="tooltip">Subject Area</span>
+            </li>
+            <li>
+                <a href="view-members.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="links-name">Members</span>
+                </a>
+                <span class="tooltip">Members</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <header>Logged in as: <br> Admin</header>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket" id="log-out"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Container Section  -->
+    <section class="view-container">
+        <div class="wrapper">
+            <div class="header-details">
+                <header>View Members</header>
+                <button><a href="view-books.html"> Go Back </a></button>
+            </div>
+            <div class="content">
+                <form>
+                    <div class="field input" style="margin-top: -10px;">
+                        <label for="booktitle">Book Title</label>
+                        <input id="booktitle" type="text" class="form-control"
+                            name="booktitle" required requiredautocomplete="booktitle">
+                    </div>
+                    <div class="input description">
+                        <label for="description">Description</label>
+                        <textarea name="description" required></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field input">
+                            <label for="author">Author</label>
+                            <input id="author" type="text" class="form-control"
+                                name="author" required requiredautocomplete="author">
+                        </div>
+                        <div class="field input">
+                            <label for="subjectarea">Subject Area</label>
+                            <input id="subjectarea" type="text" class="form-control"
+                                name="subjectarea" required requiredautocomplete="subjectarea">
+                        </div>
+                        <div class="field input">
+                            <label for="Year">Year</label>
+                            <input id="Year" type="text" class="form-control"
+                                name="Year" required requiredautocomplete="Year">
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="field img">
+                            <label> Image </label>
+                            <input type="file" name="image" class="form-control">
+                        </div>
+                        <div class="field img">
+                            <label> File </label>
+                            <input type="file" name="image" class="form-control">
+                        </div>
+                    </div>
+                    <div class="field input">
+                        <label for="status">Status</label>
+                        <input id="status" type="text" class="form-control"
+                            name="status" required requiredautocomplete="status">
+                    </div>
+                    <div class="action">
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Navbar Section  -->
+    <section class="navbar">
+        <div class="user-details">
+            <header>username</header>
+            <div class="profile-icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".fa-magnifying-glass");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }
+
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }        
+    </script>
+</body>
+</html>

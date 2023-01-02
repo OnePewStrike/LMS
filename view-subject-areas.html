@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Areas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Admin Sidebar Section  -->
+    <section class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <div class="logo-name">Title/Logo</div>
+            </div>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <!-- <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li> -->
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span class="links-name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="view-books.html">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="links-name">Books</span>
+                </a>
+                <span class="tooltip">Books</span>
+            </li>
+            <li>
+                <a href="view-book-orders.html">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span class="links-name">Book Orders</span>
+                </a>
+                <span class="tooltip">Book Orders</span>
+            </li>
+            <li>
+                <a href="view-subject-areas.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span class="links-name">Subject Area</span>
+                </a>
+
+                <span class="tooltip">Subject Area</span>
+            </li>
+            <li>
+                <a href="view-members.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="links-name">Members</span>
+                </a>
+                <span class="tooltip">Members</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <header>Logged in as: <br> Admin</header>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket" id="log-out"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Container Section  -->
+    <section class="view-container">
+        <div class="wrapper">
+            <div class="header-details">
+                <header>View Subject Areas</header>
+                <button>Add Subject Area</button>
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Navbar Section  -->
+    <section class="navbar">
+        <div class="user-details">
+            <header>username</header>
+            <div class="profile-icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".fa-magnifying-glass");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }
+
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }        
+    </script>
+</body>
+</html>

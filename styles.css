@@ -11,7 +11,6 @@ body {
     min-height: 100vh;
     position: relative;
     background-color: #fff;
-    overflow: hidden;
 }
 
 /* Global Classes  */
@@ -242,7 +241,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     align-items: center;
 }
 
-.wrapper {
+.hero .wrapper {
     width: 605px;
     border-radius: 16px;
 }
@@ -1166,6 +1165,7 @@ svg {
 .sidebar ul li .tooltip {
     position: absolute;
     left: 122px;
+    z-index: 999;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 6px;
@@ -1339,7 +1339,7 @@ svg {
     flex-direction: row;
     justify-content: right;
     align-items: right;
-    padding: 5px 0;
+    padding: 5px 10px;
 }
 
 .navbar .user-details header {
@@ -1602,4 +1602,174 @@ svg {
 .home-content .latest-books .content header {
     font-size: 24px;
     font-weight: 500;
+}
+.home-content .content .table {
+    border-collapse: collapse;  
+    margin: 20px auto;
+    font-size: 14px;
+    width: 100%;
+    min-width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content .content .table thead tr {
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    border: 2px solid #AAAAAA;
+    border-bottom: 2px solid #000;
+}
+  
+.home-content .content .table th, 
+.home-content .content .table td {
+    padding: 12px 15px;
+    border: 2px solid #AAAAAA;
+}
+
+/* View Container Section  */
+.view-container {
+    position: absolute;
+    height: 100%;
+    height: calc(100% - 50px);
+    top: 50px;
+    width: calc(100% - 78px);
+    left: 78px;
+    margin: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .view-container {
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.view-container .wrapper {
+    margin: 20px;
+    height: calc(100% - 50px);
+    width: calc(100% - 78px);
+    border: 2px solid #AAAAAA;
+}
+
+.view-container .wrapper .header-details {
+    display: flex;
+    padding: 25px;
+    height: 10%;
+    border-bottom: 2px solid #AAAAAA;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-container .wrapper .header-details header {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.view-container .wrapper .header-details button {
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: #000;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.view-container .wrapper .header-details button:hover {
+    color: #000;
+    background-color: #d9d9d9;
+}
+
+.view-container .wrapper .header-details button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.view-container .content {
+    width: 100%;
+    padding: 25px;
+}
+
+.view-container .content form .field {
+
+}
+
+
+.view-container .content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-container .content form .field {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.view-container .content form .field label {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.view-container .content form .input {
+    width: 100%;
+}
+
+.view-container .content form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 20px 30px 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+}
+
+.view-container .content form .input.description {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;   
+}
+
+.view-container .content form .input.description label {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.view-container .content form .description textarea {
+    padding: 10px;
+    height: 100px;
+    border: 1px solid #AAAAAA;
+    resize: none;
+    border-radius: 3px;
+}
+
+.view-container .content form .action {
+    display: flex;
+    justify-content: right;
+    margin: 30px auto;
+}
+
+.view-container .content form .action button {
+    padding: 10px 80px;
+    background-color: #000;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+}
+
+.view-container .content form .action button:hover {
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+.view-container .content form .fields {
+    display: flex;
+    flex-direction: row;
+}
+
+.view-container .content form .fields .field {
+    margin-right: 10px;
+}
+
+.view-container .content form .fields .field:last-child {
+    width: 300px;
 }
