@@ -1174,7 +1174,7 @@ svg {
     background-color: #fff;
     color: #000;
     line-height: 35px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
     text-align: center;
     opacity: 0;
     transition: 0s;
@@ -1247,7 +1247,7 @@ svg {
     z-index: 99;
     color: #fff;
     font-size: 14px;
-    transform: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .sidebar ul li .fa-magnifying-glass:hover {
@@ -1317,21 +1317,289 @@ svg {
     pointer-events: auto;
 }
 
+/* Admin Navbar Section  */
+.navbar {
+    position: absolute;
+    height: 50px;
+    width: calc(100% - 78px);
+    left: 78px;
+    border: 2px solid #000;
+    border-left: none;
+    padding: 5px 12px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .navbar {
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.navbar .user-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    padding: 5px 0;
+}
+
+.navbar .user-details header {
+    margin-right: 10px;
+}
+
+/* Dashboard Home Section */
 .home-content {
     position: absolute;
     height: 100%;
+    height: calc(100% - 50px);
+    top: 50px;
     width: calc(100% - 78px);
     left: 78px;
-}
-
-.home-content .text {
-    font-size: 25px;
-    font-weight: 500;
-    color: #000;
-    margin: 12px;
+    margin: 10px 20px;
+    transition: all 0.5s ease;
 }
 
 .sidebar.active ~ .home-content {
     width: calc(100% - 240px);
     left: 240px;
+}
+
+.home-content .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-content .header-details header {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.home-content .header-details p {
+    font-size: 20px;
+}
+
+.home-content .search-container {
+    margin: 20px;
+}
+  
+.home-content .search-container form {
+    margin: 0 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px 12px 0px;
+}
+  
+.home-content .search-container form input {
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 18px;
+}
+  
+.home-content .search-container form input::placeholder {
+    color: #000;
+}
+  
+.home-content .search-container form button {
+    margin-right: 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+  
+.home-content .search-container form button .fa-magnifying-glass {
+      font-size: 24px;
+      transition: all 0.3s ease 0s;
+}
+  
+.home-content .search-container form button i:hover {
+    transform: scale(1.1);
+}
+
+.home-content .record-details {
+    margin: 10px 0;
+}
+
+.home-content .record-details .row {
+    display: flex;
+    width: calc(100% - 21px);
+}
+
+.home-content .record-details .row .content-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 435px;
+    height: 120px;
+    margin-right: 20px;
+    border: 2px solid #AAAAAA;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.home-content .record-details .row .content-col:hover {
+    border: 2px solid #000;
+}
+
+.home-content .record-details .row .content-col .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-content .record-details .row .content-col .top header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.home-content .record-details .row .content-col .top i {
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+.home-content .double-content {
+    display: flex;
+    width: calc(100% - 21px);
+}
+
+.home-content .double-content .content {
+    margin-right: 20px;
+    border: 2px solid #AAAAAA;
+    height: 420px;
+    width: 890px;
+    border-radius: 3px;
+}
+
+.home-content .double-content .book-reports {
+    padding: 15px;
+}
+
+.home-content .double-content .book-reports header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.home-content .double-content .book-reports .percent-row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content .double-content .book-reports .percent-row .content-col p {
+    font-size: 20px;
+}
+
+.home-content .double-content .book-reports .pie-wrapper {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-content .double-content .book-reports .pie-wrapper .pie-chart {
+    height: 260px;
+    width: 260px;
+    border: 20px solid #000;
+    border-radius: 100%;
+}
+
+.home-content .double-content .book-reports .pie-wrapper .legend .detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-content .double-content .book-reports .pie-wrapper .legend .detail .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 4px 10px;
+    background-color: #000;
+}
+
+.home-content .double-content .book-reports .pie-wrapper .legend .detail p{
+    margin: 0 10px 20px 0;
+
+}
+
+.home-content .double-content .book-orders {
+    padding: 15px;
+}
+
+.home-content .double-content .book-orders header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.home-content .double-content .book-orders .row {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content .double-content .book-orders .row .content-col {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-content .double-content .book-orders .row .content-col .icon {
+    width: 100%;
+    margin: 10px 5px 0 0;
+    height: 35px;
+    width: 12px;
+    border-radius: 30px;
+    background-color: #000;
+}
+
+.home-content .double-content .book-orders .row .content-col .user-req {
+    width: 100%;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content .double-content .book-orders .row .content-col .user-req .user-details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-content .double-content .book-orders .row .content-col .user-req .user-details header {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.home-content .double-content .book-orders .row .content-col .user-req .user-details h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.home-content .double-content .book-orders .row .content-col .user-req p {
+    font-size: 16px;
+}
+
+.home-content .latest-books {
+    margin: 10px 0;
+    border: 2px solid #AAAAAA;
+    height: 240px;
+    width: calc(100% - 42px);
+    border-radius: 3px;
+}
+
+.home-content .latest-books .content {
+    padding: 15px;
+}
+
+.home-content .latest-books .content header {
+    font-size: 24px;
+    font-weight: 500;
 }
