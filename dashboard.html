@@ -83,13 +83,98 @@
         </div>
     </section>
 
-    <!-- Dashboard Home Content -->
+    <!-- Dashboard Home Section -->
     <section class="home-content">
-        <div class="header-details">
-            <header>Dashboard</header>
-            <p>Overview of Records</p>
+        <div class="header-container">
+            <div class="header-details">
+                <header>Dashboard</header>
+                <p>Overview of Records</p>
+            </div>
+            <div class="search-container">
+                <form>
+                    <input type="search" name="search">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
         </div>
         
+        <div class="record-details">
+            <div class="row">
+                <div class="content-col">
+                    <div class="top">
+                        <header>Available Books</header>
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <p># of available books in the library</p>
+                </div>
+                <div class="content-col">
+                    <div class="top">
+                        <header>Borrowed Books</header>
+                        <i class="fa-solid fa-address-book"></i>
+                    </div>
+                    <p># of borrowed books</p>
+                </div>
+                <div class="content-col">
+                    <div class="top">
+                        <header>Lost Books</header>
+                        <i class="fa-solid fa-circle-question"></i>
+                    </div>
+                    <p># of lost books</p>
+                </div>
+                <div class="content-col">
+                    <div class="top">
+                        <header>Members</header>
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <p># of members in the system</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="double-content">
+            <div class="content book-reports">
+                <header>Total Books Report</header>
+                <div class="percent-row">
+                    <div class="content-col">
+                        <p>33.33% <br> Available </p>
+                    </div>
+                    <div class="content-col">
+                        <p>33.33% <br> Borrowed</p>
+                    </div>
+                    <div class="content-col">
+                        <p>33.33% <br> Lost </p>
+                    </div>
+                </div>
+                <div class="pie-wrapper">
+                    <div class="pie-chart"></div>
+                    <div class="legend">
+                        <div class="detail">
+                            <div class="icon"></div>
+                            <p>Available Books</p>
+                        </div>
+                        <div class="detail">
+                            <div class="icon"></div>
+                            <p>Available Books</p>
+                        </div>
+                        <div class="detail">
+                            <div class="icon"></div>
+                            <p>Available Books</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content book-orders">
+                Book Orders
+            </div>
+        </div>
+
+        <div class="latest-books">
+            <div class="content">
+                <header>Latest Books</header>
+            </div>
+        </div>
     </section>
 
     <script>
