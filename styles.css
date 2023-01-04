@@ -1451,6 +1451,11 @@ svg {
     border: 1px solid #000;
 }
 
+.home-content .record-details .row .content-col a {
+    color: #000;
+    text-decoration: none;
+}
+
 .home-content .record-details .row .content-col .top {
     display: flex;
     justify-content: space-between;
