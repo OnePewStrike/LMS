@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Book</title>
+    <title>Edit Book</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -76,7 +76,7 @@
     <section class="view-container">
         <div class="wrapper">
             <div class="header-details">
-                <header>Add Book</header>
+                <header>Edit Book</header>
                 <button><a href="view-subject-areas.html"> Go Back </a></button>
             </div>
             <div class="content">
@@ -84,27 +84,32 @@
                     <div class="field input" style="margin-top: -10px;">
                         <label for="booktitle">Book Title</label>
                         <input id="booktitle" type="text" class="form-control"
-                            name="booktitle" required requiredautocomplete="booktitle">
+                            name="booktitle" required requiredautocomplete="booktitle"
+                            placeholder="Book Title Placeholder">
                     </div>
                     <div class="input description">
                         <label for="description">Description</label>
-                        <textarea name="description" required></textarea>
+                        <textarea name="description" required 
+                        placeholder="Description Placeholder"></textarea>
                     </div>
                     <div class="fields">
                         <div class="field input">
                             <label for="author">Author</label>
                             <input id="author" type="text" class="form-control"
-                                name="author" required requiredautocomplete="author">
+                                name="author" required requiredautocomplete="author"
+                                placeholder="Author Placeholder">
                         </div>
                         <div class="field input">
                             <label for="subjectarea">Subject Area</label>
                             <input id="subjectarea" type="text" class="form-control"
-                                name="subjectarea" required requiredautocomplete="subjectarea">
+                                name="subjectarea" required requiredautocomplete="subjectarea"
+                                placeholder="Subject Area Placeholder">
                         </div>
                         <div class="field input" style="width: 300px;">
                             <label for="Year">Year</label>
                             <input id="Year" type="text" class="form-control"
-                                name="Year" required requiredautocomplete="Year">
+                                name="Year" required requiredautocomplete="Year"
+                                placeholder="Year">
                         </div>
                     </div>
                     <div class="fields">
@@ -120,10 +125,11 @@
                     <div class="field input">
                         <label for="status">Status</label>
                         <input id="status" type="text" class="form-control"
-                            name="status" required requiredautocomplete="status">
+                            name="status" required requiredautocomplete="status"
+                            placeholder="Status Placeholder">
                     </div>
                     <div class="action">
-                        <button type="submit">Add</button>
+                        <button type="submit">Update</button>
                     </div>
                 </form>
             </div>
@@ -141,6 +147,18 @@
         </div>
     </section>
     
-    <script src="custom.js" crossorigin="anonymous"></script>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".fa-magnifying-glass");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }
+
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }        
+    </script>
 </body>
 </html>

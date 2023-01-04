@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     position: relative;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 /* Global Classes  */
@@ -441,6 +442,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .footer .row .content-col ul li {
     font-size: 20px;
     margin: 5px;
+}
+
+.footer .row .content-col ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .footer .horizontal-line {
@@ -1435,14 +1441,14 @@ svg {
     width: 435px;
     height: 120px;
     margin-right: 20px;
-    border: 2px solid #AAAAAA;
+    border: 1px solid #AAAAAA;
     border-radius: 3px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
 
 .home-content .record-details .row .content-col:hover {
-    border: 2px solid #000;
+    border: 1px solid #000;
 }
 
 .home-content .record-details .row .content-col .top {
@@ -1467,7 +1473,7 @@ svg {
 
 .home-content .double-content .content {
     margin-right: 20px;
-    border: 2px solid #AAAAAA;
+    border: 1px solid #AAAAAA;
     height: 420px;
     width: 890px;
     border-radius: 3px;
@@ -1589,7 +1595,7 @@ svg {
 
 .home-content .latest-books {
     margin: 10px 0;
-    border: 2px solid #AAAAAA;
+    border: 1px solid #AAAAAA;
     height: 240px;
     width: calc(100% - 42px);
     border-radius: 3px;
@@ -1618,25 +1624,24 @@ svg {
     color: #000;
     text-align: left;
     font-weight: bold;
-    border: 2px solid #AAAAAA;
-    border-bottom: 2px solid #000;
+    border: 1px solid #AAAAAA;
+    border-bottom: 1px solid #000;
 }
   
 .home-content .content .table th, 
 .home-content .content .table td {
     padding: 12px 15px;
-    border: 2px solid #AAAAAA;
+    border: 1px solid #AAAAAA;
 }
 
 /* View Container Section  */
 .view-container {
     position: absolute;
-
-
     top: 50px;
     width: calc(100% - 78px);
     left: 78px;
     margin: 10px 20px;
+    z-index: 0;
     transition: all 0.5s ease;
 }
 
@@ -1649,14 +1654,14 @@ svg {
     margin: 20px;
     height: calc(100% - 50px);
     width: calc(100% - 78px);
-    border: 2px solid #AAAAAA;
+    border: 1px solid #AAAAAA;
 }
 
 .view-container .wrapper .header-details {
     display: flex;
     padding: 25px;
     height: 10%;
-    border-bottom: 2px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
     justify-content: space-between;
     align-items: center;
 }
@@ -1719,6 +1724,7 @@ svg {
     width: 100%;
     font-size: 16px;
     padding: 25px 20px 25px 10px;
+    color: #000;
     border: 1px solid #AAAAAA;
     border-radius: 3px;
 }
@@ -1751,6 +1757,7 @@ svg {
     border: 1px solid #AAAAAA;
     resize: none;
     border-radius: 3px;
+    font-size: 16px;
 }
 
 .view-container .content form .action {

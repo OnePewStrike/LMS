@@ -76,54 +76,48 @@
     <section class="view-container">
         <div class="wrapper">
             <div class="header-details">
-                <header>Add Book</header>
-                <button><a href="view-subject-areas.html"> Go Back </a></button>
+                <header>Edit Subject Area</header>
+                <button><a href="view-books.html"> Go Back </a></button>
             </div>
             <div class="content">
                 <form>
                     <div class="field input" style="margin-top: -10px;">
-                        <label for="booktitle">Book Title</label>
-                        <input id="booktitle" type="text" class="form-control"
-                            name="booktitle" required requiredautocomplete="booktitle">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" class="form-control"
+                            name="name" required requiredautocomplete="name"
+                            placeholder="Name Placeholder">
                     </div>
                     <div class="input description">
                         <label for="description">Description</label>
-                        <textarea name="description" required></textarea>
-                    </div>
-                    <div class="fields">
-                        <div class="field input">
-                            <label for="author">Author</label>
-                            <input id="author" type="text" class="form-control"
-                                name="author" required requiredautocomplete="author">
-                        </div>
-                        <div class="field input">
-                            <label for="subjectarea">Subject Area</label>
-                            <input id="subjectarea" type="text" class="form-control"
-                                name="subjectarea" required requiredautocomplete="subjectarea">
-                        </div>
-                        <div class="field input" style="width: 300px;">
-                            <label for="Year">Year</label>
-                            <input id="Year" type="text" class="form-control"
-                                name="Year" required requiredautocomplete="Year">
-                        </div>
+                        <textarea name="description" required style="height: 200px;"
+                        placeholder="Description Placeholder"></textarea>
                     </div>
                     <div class="fields">
                         <div class="field img">
                             <label> Image </label>
                             <input type="file" name="image" class="custom-file-upload">
                         </div>
-                        <div class="field img">
-                            <label> File </label>
-                            <input type="file" name="file" class="custom-file-upload">
-                        </div>
                     </div>
                     <div class="field input">
                         <label for="status">Status</label>
                         <input id="status" type="text" class="form-control"
-                            name="status" required requiredautocomplete="status">
+                            name="status" required requiredautocomplete="status"
+                            placeholder="Status Placeholder">
                     </div>
-                    <div class="action">
-                        <button type="submit">Add</button>
+                    <div class="row">
+                        <div class="checkbox-container">
+                            <div class="checkbox">
+                                <input type="checkbox" name="navbar_status">
+                                <label> Navbar Status </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="status">
+                                <label> Status </label>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button type="submit">Update</button>
+                        </div>
                     </div>
                 </form>
             </div>
