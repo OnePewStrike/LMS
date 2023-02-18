@@ -1,3 +1,16 @@
+// NavBar
+const navBar = document.querySelector(".nav");
+const menu = document.querySelector("#menu-btn")
+
+menu.onclick = () => {
+    menu.classList.toggle('fa-xmark');
+    navBar.classList.toggle('active');
+}
+
+window.onscroll = () => {
+    navBar.classList.remove('active');
+}
+
 // FAQs Module
 const faqs = document.querySelectorAll(".faq")
 
