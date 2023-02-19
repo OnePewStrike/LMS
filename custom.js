@@ -11,15 +11,6 @@ window.onscroll = () => {
     navBar.classList.remove('active');
 }
 
-// FAQs Module
-const faqs = document.querySelectorAll(".faq")
-
-faqs.forEach(faq => {
-    faq.addEventListener("click", () => {
-        faq.classList.toggle("active");
-    });
-});
-
 // Search Sidebar Module 
 function show() {
     document.getElementById('sidebar').classList.toggle('active');
@@ -37,4 +28,14 @@ btn.onclick = function() {
 
 searchBtn.onclick = function() {
     sidebar.classList.toggle('active');
-}        
+}    
+
+// FAQs Module
+const faqs = document.querySelectorAll(".faq")
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    });
+});
+    
